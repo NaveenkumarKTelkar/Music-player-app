@@ -31,7 +31,7 @@ const Track = () => {
         }).catch(error => console.log(error.message));
     }
 
-    useEffect(()=>{serachTracks()}, []);
+    useEffect(()=>{serachTracks()}, [serachTracks]);
 
     const trackIcon =(url)=>{
         if (!url) {
